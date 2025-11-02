@@ -5,13 +5,13 @@ import SocialLink from './SocialLink.vue'
 import telegram from '@/assets/icons/icons8-telegram-app.svg'
 import greenapp from '@/assets/icons/icons8-whatsapp.svg'
 import gmail from '@/assets/icons/icons8-gmail.svg'
+
 const props = defineProps({
   isOpen: {
     type: Boolean,
     required: true
   }
 })
-
 // watcher disables background scroll when modal is open
 watch(
   () => props.isOpen,
@@ -19,7 +19,6 @@ watch(
     document.body.style.overflow = newVal ? 'hidden' : ''
   }
 )
-
 // safety cleanup on unmount
 onUnmounted(() => {
   document.body.style.overflow = ''
@@ -53,7 +52,7 @@ const handleOverlayClick = e => {
     >
       <!-- Modal content container -->
       <div
-        class="relative flex flex-col h-auto p-6 space-y-4 text-white transition-transform transform bg-white border shadow-2xl rounded-2xl dark:bg-secondary-dark w-72 md:w-96 dark:border-gray-300"
+        class="relative flex flex-col h-auto p-6 space-y-4 text-white transition-transform transform bg-white border shadow-2xl rounded-2xl dark:bg-[#323435] w-72 md:w-96 border-gray-500"
       >
         <!-- Close button -->
         <button
@@ -104,6 +103,7 @@ const handleOverlayClick = e => {
                         tooltip="Check me out on facebook"
                     />
               <span class="text-sm">Gmail</span>
+              
               </div>
             </div>
           </div>

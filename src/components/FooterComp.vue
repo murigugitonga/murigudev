@@ -2,8 +2,8 @@
 import SocialLink from './SocialLink.vue';
 
 import facebook from '@/assets/icons/facebook-svgrepo-com.svg'
-import twitter from '@/assets/icons/icons8-x-50.png'
-import instagram from '@/assets/icons/icons8-instagram-50.png'
+import twitter from '@/assets/icons/icons8-x.svg'
+import instagram from '@/assets/icons/icons8-instagram.svg'
 
 import linkedIn from '@/assets/icons/icons8-linkedin.svg'
 import gmail from '@/assets/icons/icons8-gmail.svg'
@@ -15,7 +15,13 @@ import discord from '@/assets/icons/icons8-discord.svg'
         <div class="flex flex-col space-y-3">
             <div class="flex items-center text-[18px] justify-between w-full pb-3 border-b border-black dark:border-green-500 dark:text-gray-200">
                 <span>Blog</span>
-                <img src="../assets/icons/navigation-arrow-arrows-direction-right-icon.svg" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" class="hidden w-10 dark:block" fill="#ffff" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="block w-10 dark:hidden" fill="#000" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+
             </div>
             <div class="flex justify-between w-full dark:text-gray-200">
                 <!--Socials-->

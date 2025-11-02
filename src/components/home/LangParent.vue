@@ -2,20 +2,20 @@
 import LangCompMain from './LangCompMain.vue'
 
 import figmaIcon from '@/assets/icons/figma-svgrepo-com.svg'
-import inksIcon from '@/assets/icons/Instagram-icon.svg'
-import GIMPIcon from '@/assets/icons/mixpanel-svgrepo-com.svg'
+import inksIcon from '@/assets/icons/icons8-inkscape-24.png'
+import GIMPIcon from '@/assets/icons/icons8-gimp-48.png'
 
 // import icons
 import htmlIcon from '@/assets/icons/html-5-svgrepo-com.svg'
 import cssIcon from '@/assets/icons/css-3-svgrepo-com.svg'
 import jsIcon from '@/assets/icons/javascript-svgrepo-com.svg'
-import tsIcon from '@/assets/icons/typescript-svgrepo-com.svg'
+import tsIcon from '@/assets/icons/icons8-typescript-48 (1).png'
 
 import phpIcon from '@/assets/icons/php.svg'
 import pythonIcon from '@/assets/icons/python.svg'
 import sqlIcon from '@/assets/icons/mysql-svgrepo-com.svg'
 
-import tailwindIcon from '@/assets/icons/tailwindcss.svg'
+import tailwindIcon from '@/assets/icons/tailwindcss-icon.svg'
 import vueIcon from '@/assets/icons/vue-vuejs-javascript-js-framework.svg'
 import nodeIcon from '@/assets/icons/nodejs-1-logo-svgrepo-com.svg'
 import laraIcon from '@/assets/icons/laravel.svg'
