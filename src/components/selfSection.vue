@@ -9,7 +9,7 @@ const isModalOpen = ref(false);
         <img src="../assets/images/muriguMain.png"class="w-full rounded-lg drop-shadow" alt="">
         <div class="flex items-center justify-between w-full md:items-start md:w-full md:space-y-5 lg:space-y-0 lg:items-center md:flex-col lg:flex-row">
             <div class="flex flex-col w-1/2 md:w-full lg:w-1/2 items-start space-y-0.5 md:items-start">
-                <p class="space-x-2 text-[14px] uppercase md:text-sm dark:text-gray-100"><span class="font-semibold">Murigu</span><span class="font-medium">Gitonga</span></p>
+                <p class="space-x-2 text-[15px] uppercase md:text-sm dark:text-gray-100"><span class="font-semibold">Murigu</span><span class="font-medium">Gitonga</span></p>
                 <p class="text-[13px] text-gray-800 md:text-sm dark:text-gray-400">Software Engineer</p>
             </div>
             <div class="flex items-center justify-center w-1/2 md:w-full lg:w-1/2">

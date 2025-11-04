@@ -55,7 +55,7 @@ import SectHeader from '../SectHeader.vue';
                     </div>
                     
                 </div>
-            </div>
+            </div> 
              <div class="flex flex-col items-end space-y-6 text-gray-800 dark:text-gray-300">
                 <p class="text-[15px] text-end md:text-[18px]">
                     Murigu Gitonga is that one guy in a team that will always see solutions

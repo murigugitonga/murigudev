@@ -1,3 +1,7 @@
+<script setup>
+
+
+</script>
 <template>
     <div class="block">
         <div class="flex flex-col space-y-3">

@@ -73,10 +73,10 @@ const handleOverlayClick = e => {
             <div class="flex flex-row items-center justify-between text-lg dark:text-white">
               <div class="flex items-center w-full space-x-4">
               <SocialLink 
-                        href="https://facebook.com"
+                        href="https://wa.me/254792684339?text=Hi!%20I%20am%20interested%20in%20your%20services"
                         :icon="greenapp"
                         label="Facebook"
-                        tooltip="Check me out on facebook"
+                        tooltip="Reach out on Whatsapp"
                     />
               <span class="text-sm">WhatsApp</span>
               </div>
@@ -87,7 +87,7 @@ const handleOverlayClick = e => {
               <SocialLink 
                         href="https://facebook.com"
                         :icon="telegram"
-                        label="Facebook"
+                        label="Telegram"
                         tooltip="Check me out on facebook"
                     />
               <span class="text-sm">WhatsApp</span>
@@ -97,9 +97,9 @@ const handleOverlayClick = e => {
             <div class="flex flex-row items-center justify-between text-lg dark:text-white">
               <div class="flex items-center w-full space-x-4">
               <SocialLink 
-                        href="https://facebook.com"
+                        href="mailto:your_email_address@gmail.com"
                         :icon="gmail"
-                        label="Facebook"
+                        label="Gmail"
                         tooltip="Check me out on facebook"
                     />
               <span class="text-sm">Gmail</span>
