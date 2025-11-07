@@ -67,7 +67,7 @@ const handleOverlayClick = e => {
           <h2 class="mb-4 text-[17px] font-semibold text-start dark:text-gray-50">
             Send me a message
           </h2>
-
+          
           <div class="flex flex-col space-y-5 font-medium pe-5">
             <!-- WhatsApp -->
             <div class="flex flex-row items-center justify-between text-lg dark:text-white">
@@ -80,6 +80,7 @@ const handleOverlayClick = e => {
                     />
               <span class="text-sm">WhatsApp</span>
               </div>
+              
             </div>
             <!-- Telegram -->
             <div class="flex flex-row items-center justify-between text-lg dark:text-white">
@@ -97,13 +98,12 @@ const handleOverlayClick = e => {
             <div class="flex flex-row items-center justify-between text-lg dark:text-white">
               <div class="flex items-center w-full space-x-4">
               <SocialLink 
-                        href="mailto:your_email_address@gmail.com"
+                        href="mailto:gitongacharlie01@gmail.com?subject=Website%20Inquiry&body=Hello%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20services."
                         :icon="gmail"
                         label="Gmail"
                         tooltip="Check me out on facebook"
                     />
               <span class="text-sm">Gmail</span>
-              
               </div>
             </div>
           </div>

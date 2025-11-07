@@ -1,6 +1,7 @@
 <script setup>
 import LangCompMain from './LangCompMain.vue'
 
+
 import figmaIcon from '@/assets/icons/figma-svgrepo-com.svg'
 import inksIcon from '@/assets/icons/icons8-inkscape-24.png'
 import GIMPIcon from '@/assets/icons/icons8-gimp-48.png'
@@ -19,6 +20,7 @@ import tailwindIcon from '@/assets/icons/tailwindcss-icon.svg'
 import vueIcon from '@/assets/icons/vue-vuejs-javascript-js-framework.svg'
 import nodeIcon from '@/assets/icons/nodejs-1-logo-svgrepo-com.svg'
 import laraIcon from '@/assets/icons/laravel.svg'
+import SectHeader from '../SectHeader.vue'
 
 const designSkills = [
   {name : 'Figma', icon: figmaIcon},
@@ -46,24 +48,27 @@ const frameworks = [
 </script>
 
 <template>
-    
-  <section class="grid gap-8 px-2 md:grid-cols-2">
-    <LangCompMain
-      specialty="Graphic & Web Design"
-      :skills="designSkills"
-    />
-    
-    <LangCompMain
-      specialty="Frontend Development"
-      :skills="frontendSkills"
-    />
-    <LangCompMain
-      specialty="Backend Development"
-      :skills="backendSkills"
-    />
-    <LangCompMain
-      specialty="Frameworks"
-      :skills="frameworks"
-    />
-  </section>
+  
+  <section class="flex flex-col space-y-5">
+    <SectHeader message="Software Development"/>
+    <div class="grid gap-8 px-2 md:grid-cols-2">
+      <LangCompMain
+        specialty="Graphic & Web Design"
+        :skills="designSkills"
+      />
+      
+      <LangCompMain
+        specialty="Frontend Development"
+        :skills="frontendSkills"
+      />
+      <LangCompMain
+        specialty="Backend Development"
+        :skills="backendSkills"
+      />
+      <LangCompMain
+        specialty="Frameworks"
+        :skills="frameworks"
+      />
+    </div>
+    </section>
 </template>
