@@ -1,8 +1,8 @@
 <script setup>
 import SocialLink from './SocialLink.vue';
 
-import facebook from '@/assets/icons/facebook-svgrepo-com.svg'
-import twitter from '@/assets/icons/icons8-x.svg'
+import facebook from '@/assets/icons/icons8-facebook-logo (1).svg'
+import twitter from '@/assets/icons/icons8-twitter.svg'
 import instagram from '@/assets/icons/icons8-instagram.svg'
 
 import linkedIn from '@/assets/icons/icons8-linkedin.svg'
@@ -27,21 +27,21 @@ import discord from '@/assets/icons/icons8-discord.svg'
                 <!--Socials-->
                 <nav class="flex flex-col space-y-4">
                     <SocialLink 
-                        href="https://facebook.com"
+                        href="https://www.facebook.com/profile.php?id=100073308548686"
                         :icon="facebook"
                         label="Facebook"
                         tooltip="Check me out on facebook"
                     />
                     <!--Twitter-->
                      <SocialLink 
-                        href="https://twitter.com"
+                        href="https://x.com/Imurigugitonga?t=i-3-KYfZ_dKrTgHLqH3jig&s=08"
                         :icon="twitter"
                         label="X(twitter)"
                         tooltip="Follow me on twitter"
                     />
                     <!--Instagram-->
                     <SocialLink 
-                        href="https://facebook.com"
+                        href="https://www.instagram.com/murigugitonga01?igsh=bGk0dTJncWd1djl1"
                         :icon="instagram"
                         label="Instagram"
                         tooltip="Check out my insta!"
@@ -52,21 +52,21 @@ import discord from '@/assets/icons/icons8-discord.svg'
                 </div> 
                 <nav class="flex flex-col space-y-4 dark:text-gray-200">
                      <SocialLink 
-                        href="https://facebook.com"
+                        href="https://www.linkedin.com/in/charles-gitonga-915bab360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                         :icon="linkedIn"
                         label="linkedIn"
                         tooltip="Check me out on LinkedIn"
                     />
                     <!--Gmail-->
                     <SocialLink 
-                        href="https://facebook.com"
+                        href="mailto:gitongacharlie01@gmail.com?subject=Website%20Inquiry&body=Hello%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20services."
                         :icon="gmail"
                         label="gmail"
                         tooltip="Send me an gmail"
                     />
                     <!--Discord-->
                      <SocialLink 
-                        href="https://facebook.com"
+                        href="https://discord.gg/qYSk4UsUQ"
                         :icon="discord"
                         label="Discord"
                         tooltip="Check out my discord server"

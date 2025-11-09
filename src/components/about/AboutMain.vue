@@ -1,6 +1,7 @@
 <script setup>
 import PageHeader from '../PageHeader.vue';
 
+import progImage from "@/assets/images/compProgrammer.png"
 
 // import CardOne from '@/assets/images/MuriguAIDarkCard2.png'
 // import CardTwo from '@/assets/images/servers.jpeg'
@@ -50,7 +51,7 @@ import PageHeader from '../PageHeader.vue';
             </div>
             
             <div class="flex flex-col space-y-3 px-2.5 md:max-w-4xl">
-                <img src="@/assets/images/MuriguAIDarkCard2.png" class="shadow-md shadow-gray-500 rounded-2xl" alt="A design by yours truly" loading="eager">
+                <img src="@/assets/images/compProgrammer.png" class="shadow-md shadow-gray-500 rounded-2xl" alt="A design by yours truly" loading="eager">
                 <div class="flex flex-col space-y-2">  
                     <span class="text-[21px] font-semibold">Computer programmer</span>
                     <p class="text-[17px] text-gray-600 dark:text-gray-200">
@@ -64,7 +65,7 @@ import PageHeader from '../PageHeader.vue';
             <div class="flex flex-col space-y-3 px-2.5 md:max-w-4xl">
                 <img src="@/assets/images/MuriguAIDarkCard2.png" class="shadow-md shadow-gray-500 rounded-2xl" alt="A group of people in an office" loading="eager">
                 <div class="flex flex-col space-y-1">
-                    <span class="text-[21px] font-semibold">Team Player</span>
+                    <span class="text-[21px] font-semibold">AI Proponent</span>
                     <p class="text-[17px] text-gray-600 dark:text-gray-200">
                         Great products are as a result of fluid team co-ordination, elaborate
                         feedback loops and critical review, also working in teams is the best way 

@@ -91,7 +91,7 @@ const handleOverlayClick = e => {
                         label="Telegram"
                         tooltip="Check me out on facebook"
                     />
-              <span class="text-sm">WhatsApp</span>
+              <span class="text-sm">Telegram</span>
               </div>
             </div>
             <!--Gmail-->

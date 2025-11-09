@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import img1 from "../assets/images/modifiedBSCard.png";
 import img2 from "../assets/images/muriguprograms.png";
 import img3 from "../assets/images/servers.jpeg";
-
+import img4 from "@/assets/images/compProgrammer.png";
 const slides = [
   {
     img: img1,
@@ -18,29 +18,34 @@ const slides = [
   },
   {
     img: img2,
-    title: "Powerful Performance",
+    title: "Client-Centric Innovation",
     desc: "Experience seamless power in every interaction.",
   },
   {
     img: img3,
-    title: "Intelligent Design",
+    title: "Scalable infrastructure",
+    desc: "Architectures that fluidly scale.",
+  },
+  {
+    img: img4,
+    title: "AI-Powered Workflows",
     desc: "Where creativity meets precision and purpose.",
   },
 ];
 </script>
 
 <template>
-  <div class="block w-full md:hidden md:max-w-screen-sm lg:max-w-screen-xl">
+  <div class="block w-full md:max-w-screen-sm lg:max-w-screen-xl">
     <div
       class="relative w-full overflow-hidden rounded-lg"
     >
       <!-- Fading edges -->
-      <div
+      <!-- <div
         class="absolute inset-y-0 left-0 z-10 w-1/5 pointer-events-none bg-gradient-to-r from-white/60 via-transparent to-transparent dark:from-[#202122]"
       ></div>
       <div
         class="absolute inset-y-0 right-0 z-10 w-1/5 pointer-events-none bg-gradient-to-l from-white/60 via-transparent to-transparent dark:from-[#202122]"
-      ></div>
+      ></div> -->
 
       <!-- Swiper Carousel -->
       <Swiper
@@ -66,10 +71,10 @@ const slides = [
 
           <!-- Overlay -->
           <div
-            class="absolute inset-0 flex flex-col items-center justify-center px-6 text-center bg-black/40 backdrop-blur-sm"
+            class="absolute flex flex-col items-start justify-center border-l-4 border-white text-start inset-10 ps-5 bg-black/40 backdrop-brightness-50 backdrop-blur-sm"
           >
             <h2
-              class="text-2xl font-extrabold tracking-wide text-white md:text-4xl drop-shadow-lg"
+              class="text-2xl font-bold tracking-wide text-white md:text-4xl drop-shadow-lg"
             >
               {{ slide.title }}
             </h2>
