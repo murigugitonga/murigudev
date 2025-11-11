@@ -35,7 +35,7 @@ const slides = [
 </script>
 
 <template>
-  <div class="block w-full md:max-w-screen-sm lg:max-w-screen-xl">
+  <div class="block w-full md:max-w-screen-sm lg:max-w-screen-lg">
     <div
       class="relative w-full overflow-hidden rounded-lg"
     >

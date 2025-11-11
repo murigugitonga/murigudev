@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="muriguIcon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="2.3041667"
+     inkscape:cx="37.540687"
+     inkscape:cy="60.976492"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g15" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient28"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#fb341e;stop-opacity:1;"
+         offset="0"
+         id="stop29" />
+      <stop
+         style="stop-color:#fb341e;stop-opacity:0;"
+         offset="1"
+         id="stop30" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient20"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#1b1a7f;stop-opacity:1;"
+         offset="0"
+         id="stop21" />
+      <stop
+         style="stop-color:#3f3eac;stop-opacity:0;"
+         offset="1"
+         id="stop22" />
+    </linearGradient>
+    <linearGradient
+       id="swatch13">
+      <stop
+         style="stop-color:#ff7d57;stop-opacity:1;"
+         offset="0"
+         id="stop13" />
+    </linearGradient>
+    <rect
+       x="13.23689"
+       y="36.672694"
+       width="96.130199"
+       height="59.674503"
+       id="rect1" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient20"
+       id="linearGradient22"
+       x1="4.8986168"
+       y1="60"
+       x2="115.1014"
+       y2="60"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="repeat" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient28"
+       id="linearGradient30"
+       x1="10.681211"
+       y1="39.687038"
+       x2="69.607849"
+       y2="39.687038"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       id="text1"
+       style="fill:#031184;text-orientation:auto;font-size:48px;-inkscape-font-specification:Verdana;font-family:Verdana;stroke:#ff57c7;line-height:0px;text-align:center;stroke-width:0.999;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1)" />
+    <g
+       id="g15"
+       style="fill:url(#linearGradient22);fill-opacity:1;paint-order:stroke fill markers;stroke-width:2;stroke-dasharray:none">
+      <text
+         xml:space="preserve"
+         style="font-size:123.737px;line-height:0px;font-family:Verdana;-inkscape-font-specification:Verdana;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:103.027;fill:url(#linearGradient22);stroke:#57f024;stroke-width:1.58970793;stroke-dasharray:38.15298899, 1.58970793;stroke-opacity:1;stroke-dashoffset:0;fill-opacity:1;paint-order:stroke fill markers;stroke-linejoin:bevel"
+         x="40.144665"
+         y="57.070522"
+         id="text2"
+         transform="matrix(1.8871391,0,0,1.8871391,-15.758315,-14.894959)"><tspan
+           x="40.144665"
+           y="57.070522"
+           id="tspan3"><tspan
+             style="font-size:61.8683px;font-family:Broadway;-inkscape-font-specification:Broadway"
+             id="tspan1">M</tspan></tspan><tspan
+           x="40.144665"
+           y="63.720271"
+           id="tspan5"><tspan
+             style="font-size:61.8683px;font-family:Broadway;-inkscape-font-specification:Broadway"
+             id="tspan4">G</tspan></tspan></text>
+    </g>
+  </g>
+</svg>
