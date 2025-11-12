@@ -1,10 +1,12 @@
 <script setup>
 import { watch, onUnmounted } from 'vue'
-import SocialLink from './SocialLink.vue'
+import ContactCard from './ContactCard.vue'
 
-import telegram from '@/assets/icons/icons8-telegram-app.svg'
-import greenapp from '@/assets/icons/icons8-whatsapp.svg'
-import gmail from '@/assets/icons/icons8-gmail.svg'
+//import SocialLink from './SocialLink.vue'
+
+//import telegram from '@/assets/icons/icons8-telegram-app.svg'
+//import greenapp from '@/assets/icons/icons8-whatsapp.svg'
+//import gmail from '@/assets/icons/icons8-gmail.svg'
 
 const props = defineProps({
   isOpen: {
@@ -64,12 +66,13 @@ const handleOverlayClick = e => {
 
         <!-- Modal content -->
         <div class="flex flex-col text-gray-900">
-          <h2 class="mb-4 text-[17px] font-semibold text-start dark:text-gray-50">
+          <h2 class="mb-4 text-[16px] font-semibold text-start dark:text-gray-50">
             Send me a message
           </h2>
+          <ContactCard/>
           
-          <div class="flex flex-col space-y-5 font-medium pe-5">
-            <!-- WhatsApp -->
+          <!-- <div class="flex flex-col space-y-5 font-medium pe-5">
+            
             <div class="flex flex-row items-center justify-between text-lg dark:text-white">
               <div class="flex items-center w-full space-x-4">
               <SocialLink 
@@ -82,7 +85,7 @@ const handleOverlayClick = e => {
               </div>
               
             </div>
-            <!-- Telegram -->
+            
             <div class="flex flex-row items-center justify-between text-lg dark:text-white">
               <div class="flex items-center w-full space-x-4">
               <SocialLink 
@@ -94,7 +97,7 @@ const handleOverlayClick = e => {
               <span class="text-sm">Telegram</span>
               </div>
             </div>
-            <!--Gmail-->
+            
             <div class="flex flex-row items-center justify-between text-lg dark:text-white">
               <div class="flex items-center w-full space-x-4">
               <SocialLink 
@@ -106,7 +109,7 @@ const handleOverlayClick = e => {
               <span class="text-sm">Gmail</span>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

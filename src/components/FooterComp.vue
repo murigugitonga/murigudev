@@ -13,7 +13,7 @@ import discord from '@/assets/icons/icons8-discord.svg'
 <template>
     <footer class="block w-full px-2">
         <div class="flex flex-col space-y-3">
-            <div class="flex items-center text-[18px] justify-between w-full pb-1.5 border-b border-black dark:border-green-500 dark:text-gray-200">
+            <div class="flex items-center text-[18px] justify-between w-full pb-1 border-b border-black dark:border-green-500 dark:text-gray-200">
                 <span>Blog</span>
                 <a href="https://medium.com/@gitongacharlie01" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="hidden w-10 dark:block" fill="#ffff" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">

@@ -35,10 +35,10 @@ import progImage from "@/assets/images/compProgrammer.png"
     <div class="flex flex-col ps-1.5 space-y-4">
         <PageHeader page-header="About Me"/>
         <!--About Container-->
-        <div class="flex flex-col items-center justify-center space-y-12">
+        <div class="flex flex-col items-center justify-center pb-20 space-y-12">
             <!-- <AboutCard :cards="profileCards"/> -->
             <div class="flex flex-col space-y-3 px-2.5 md:max-w-4xl">
-                <img src="@/assets/images/modifiedBSCard.png" class="shadow-sm rounded-xl" alt="">
+                <img src="@/assets/images/modifiedBSCard.png" class="shadow-sm rounded-xl" alt="my design" loading="lazy">
                 <div class="flex flex-col space-y-2">
                     <span class="text-[18px] font-semibold dark:text-gray-50">Passionate Designer</span>
                     <p class="text-[15px] leading leading-relaxed text-gray-600 dark:text-gray-200">
@@ -51,7 +51,7 @@ import progImage from "@/assets/images/compProgrammer.png"
             </div>
             
             <div class="flex flex-col space-y-3 px-2.5 md:max-w-4xl">
-                <img src="@/assets/images/compProgrammer.png" class="shadow-md shadow-gray-500 rounded-2xl" alt="A design by yours truly" loading="eager">
+                <img src="@/assets/images/compProgrammer.png" class="shadow-md shadow-gray-500 rounded-2xl" alt="A program snippet by me" loading="lazy">
                 <div class="flex flex-col space-y-2">  
                     <span class="text-[18px] font-semibold">Computer programmer</span>
                     <p class="text-[15px] text-gray-600 dark:text-gray-200">
@@ -63,13 +63,13 @@ import progImage from "@/assets/images/compProgrammer.png"
             </div>
             
             <div class="flex flex-col space-y-3 px-2.5 md:max-w-4xl">
-                <img src="@/assets/images/MuriguAIDarkCard2.png" class="shadow-md shadow-gray-500 rounded-2xl" alt="A group of people in an office" loading="eager">
+                <img src="@/assets/images/MuriguAIDarkCard2.png" class="shadow-md shadow-gray-500 rounded-2xl" alt="AI" loading="lazy">
                 <div class="flex flex-col space-y-1">
-                    <span class="text-[18px] font-semibold">AI Ethusiasist</span>
+                    <span class="text-[18px] font-semibold">Artificial Intelligence Ethusiasist</span>
                     <p class="text-[15px] text-gray-600 dark:text-gray-200">
-                        Great products are as a result of fluid team co-ordination, elaborate
-                        feedback loops and critical review, also working in teams is the best way 
-                        to go.
+                        AI speeds up the software development cycles through automated testing, giving
+                        developers enough time to refine architecture and orchestrate infrastructures as 
+                        a critical compononent of software driven products.
                     </p>
                 </div>
             </div>

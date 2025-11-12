@@ -1,3 +1,83 @@
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
+
+import img1 from "@/assets/images/modifiedBSCard.png";
+import img2 from "@/assets/images/muriguprograms.png";
+import img3 from "@/assets/images/servers.jpeg";
+import img4 from "@/assets/images/compProgrammer.png";
+import img5 from "@/assets/images/AsyncCodeUpdated.png";
+
+const slides = ref([
+    {
+    image: img1,
+    title: 'User-empathetic visuals',
+    description: 'Modern interfaces that are user-driven',
+  },
+  {
+    image: img5,
+    title: 'Language-agnostic development',
+    description: 'Ability to shift between tools, libraries and frameworks with ease',
+  },
+  {
+    image: img3,
+    title: 'Scalable architectures',
+    description: 'Designing architectures that gracefully scale with complexity',
+  },
+  {
+    image: img2,
+    title: 'AI-driven workflows',
+    description: 'Embracing AI as a force multiplier and a pair developer.',
+  },
+  {
+    image: img4,
+    title: 'Serveless architectures',
+    description: 'headless and serveless architectures as the modern currency of development',
+  },
+])
+
+const currentSlide = ref(0)
+let autoSlideInterval = null
+
+function nextSlide() {
+  currentSlide.value = (currentSlide.value + 1) % slides.value.length
+}
+
+function prevSlide() {
+  currentSlide.value =
+    (currentSlide.value - 1 + slides.value.length) % slides.value.length
+}
+
+function goToSlide(index) {
+  currentSlide.value = index
+}
+
+// ✅ Auto-slide logic
+onMounted(() => {
+  autoSlideInterval = setInterval(() => {
+    nextSlide()
+  }, 5000) // 5 seconds per slide
+
+  // Pause auto-slide when hovering
+  const carousel = document.querySelector('.group')
+  carousel.addEventListener('mouseenter', pauseAutoSlide)
+  carousel.addEventListener('mouseleave', resumeAutoSlide)
+})
+
+onUnmounted(() => {
+  clearInterval(autoSlideInterval)
+})
+
+function pauseAutoSlide() {
+  clearInterval(autoSlideInterval)
+}
+
+function resumeAutoSlide() {
+  autoSlideInterval = setInterval(() => {
+    nextSlide()
+  }, 5000)
+}
+</script>
+
 <template>
   <div class="relative w-full overflow-hidden md:max-w-screen-sm lg:max-w-screen-lg group">
     <!-- Slides -->
@@ -14,20 +94,20 @@
         <img
           :src="slide.image"
           :alt="slide.title"
-          class="object-cover w-full h-96"
+          class="object-cover w-full"
         />
 
         <!-- Gradient overlays -->
-        <div
+        <!-- <div
           class="absolute inset-0 pointer-events-none bg-gradient-to-r from-white/80 via-transparent to-white/80 dark:from-gray-900/80 dark:via-transparent dark:to-gray-900/80"
-        ></div>
+        ></div> -->
 
         <!-- Text overlay -->
-        <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center background-blur-sm">
-          <h2 class="mb-2 text-3xl font-semibold text-gray-800 dark:text-gray-100">
+        <div class="absolute flex flex-col items-start justify-center p-6 leading-relaxed rounded-lg text-start bg-black/50 bottom-10 left-5 right-4 backdrop-blur-sm">
+          <h2 class="mb-2 text-2xl font-semibold text-gray-100 md:text-3xl">
             {{ slide.title }}
           </h2>
-          <p class="max-w-xl text-gray-700 dark:text-gray-300">
+          <p class="max-w-xl text-gray-200">
             {{ slide.description }}
           </p>
         </div>
@@ -82,71 +162,4 @@
   </div>
 </template>
 
-<script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
 
-//import img1 from "../assets/images/modifiedBSCard.png";
-import img2 from "@/assets/images/muriguprograms.png";
-import img3 from "@/assets/images/servers.jpeg";
-import img4 from "@/assets/images/compProgrammer.png";
-
-const slides = ref([
-  {
-    image: img3,
-    title: 'Modern Frontend Development',
-    description: 'Crafting beautiful interfaces with Vue 3 and Tailwind CSS.',
-  },
-  {
-    image: img2,
-    title: 'Smooth User Experience',
-    description: 'Delivering seamless transitions and fluid animations.',
-  },
-  {
-    image: img4,
-    title: 'Responsive by Design',
-    description: 'Optimized layouts for every device and theme mode.',
-  },
-])
-
-const currentSlide = ref(0)
-let autoSlideInterval = null
-
-function nextSlide() {
-  currentSlide.value = (currentSlide.value + 1) % slides.value.length
-}
-
-function prevSlide() {
-  currentSlide.value =
-    (currentSlide.value - 1 + slides.value.length) % slides.value.length
-}
-
-function goToSlide(index) {
-  currentSlide.value = index
-}
-
-// ✅ Auto-slide logic
-onMounted(() => {
-  autoSlideInterval = setInterval(() => {
-    nextSlide()
-  }, 5000) // 5 seconds per slide
-
-  // Pause auto-slide when hovering
-  const carousel = document.querySelector('.group')
-  carousel.addEventListener('mouseenter', pauseAutoSlide)
-  carousel.addEventListener('mouseleave', resumeAutoSlide)
-})
-
-onUnmounted(() => {
-  clearInterval(autoSlideInterval)
-})
-
-function pauseAutoSlide() {
-  clearInterval(autoSlideInterval)
-}
-
-function resumeAutoSlide() {
-  autoSlideInterval = setInterval(() => {
-    nextSlide()
-  }, 5000)
-}
-</script>
