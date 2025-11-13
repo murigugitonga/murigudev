@@ -1,3 +1,4 @@
+import "./components/composables/useDark.js"
 import { createApp } from 'vue'
 import '../src/assets/tailwind.css'
 // import 'vue3-marquee/dist/style.css'

@@ -13,8 +13,8 @@ const routes = [
     component: () => import('../views/AboutView.vue')
   },
   {
-    path: '/project',
-    name : 'Project',
+    path: '/projects',
+    name : 'Projects',
     component : () => import('../views/ProjectView.vue')
   },
   {
@@ -24,7 +24,7 @@ const routes = [
   }
 ]
 
-// 2️⃣ Create the router instance
+// router instance
 const router = createRouter({
   history: createWebHistory(), // uses HTML5 history mode
   routes

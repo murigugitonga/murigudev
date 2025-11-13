@@ -2,11 +2,6 @@
 import { watch, onUnmounted } from 'vue'
 import ContactCard from './ContactCard.vue'
 
-//import SocialLink from './SocialLink.vue'
-
-//import telegram from '@/assets/icons/icons8-telegram-app.svg'
-//import greenapp from '@/assets/icons/icons8-whatsapp.svg'
-//import gmail from '@/assets/icons/icons8-gmail.svg'
 
 const props = defineProps({
   isOpen: {
@@ -63,53 +58,12 @@ const handleOverlayClick = e => {
         >
           X
         </button>
-
         <!-- Modal content -->
         <div class="flex flex-col text-gray-900">
           <h2 class="mb-4 text-[16px] font-semibold text-start dark:text-gray-50">
             Send me a message
           </h2>
           <ContactCard/>
-          
-          <!-- <div class="flex flex-col space-y-5 font-medium pe-5">
-            
-            <div class="flex flex-row items-center justify-between text-lg dark:text-white">
-              <div class="flex items-center w-full space-x-4">
-              <SocialLink 
-                        href="https://wa.me/254792684339?text=Hi!%20I%20am%20interested%20in%20your%20services"
-                        :icon="greenapp"
-                        label="Facebook"
-                        tooltip="Reach out on Whatsapp"
-                    />
-              <span class="text-sm">WhatsApp</span>
-              </div>
-              
-            </div>
-            
-            <div class="flex flex-row items-center justify-between text-lg dark:text-white">
-              <div class="flex items-center w-full space-x-4">
-              <SocialLink 
-                        href="https://facebook.com"
-                        :icon="telegram"
-                        label="Telegram"
-                        tooltip="Check me out on facebook"
-                    />
-              <span class="text-sm">Telegram</span>
-              </div>
-            </div>
-            
-            <div class="flex flex-row items-center justify-between text-lg dark:text-white">
-              <div class="flex items-center w-full space-x-4">
-              <SocialLink 
-                        href="mailto:gitongacharlie01@gmail.com?subject=Website%20Inquiry&body=Hello%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20services."
-                        :icon="gmail"
-                        label="Gmail"
-                        tooltip="Check me out on facebook"
-                    />
-              <span class="text-sm">Gmail</span>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>

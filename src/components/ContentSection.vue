@@ -89,7 +89,7 @@ const activeLink =
   "text-blue-600 dark:text-blue-400 " +
   "after:content-[''] after:absolute after:left-0 after:bottom-[-1px] after:w-full after:h-[2px] " +
   "after:bg-blue-600 dark:after:bg-blue-400 after:opacity-100 after:rounded";
-
+  // yeap, never used tailwind so many tailwind classes at once like this too.
 
 </script>
 
@@ -111,8 +111,8 @@ const activeLink =
       </RouterLink>
 
       <RouterLink
-        to="/project"
-        :class="[baseLink, isActive('/project') ? activeLink : '']"
+        to="/projects"
+        :class="[baseLink, isActive('/projects') ? activeLink : '']"
       >
         Projects
       </RouterLink>
