@@ -1,26 +1,32 @@
 <script setup>
-import { useDark } from './composables/useDark';
+//import { useDark } from './composables/useDark';
 import { ref, onMounted , onUnmounted } from "vue";
-const {isDark, toggleDark } = useDark()
+//const {isDark, toggleDark } = useDark()
 
-const isScrolled = ref(false)
+import {useThemeStore} from "@/stores/themeStore"
+const theme = useThemeStore()
 
-const handleScroll = () =>{
-    isScrolled.value = window.scrollY > 50;
+function switchTheme() {
+    theme.toggleTheme()
 }
+//const isScrolled = ref(false)
 
-onMounted(()=>{
-    window.addEventListener("scroll", handleScroll)
-})
-onUnmounted(()=>{
-    window.addEventListener("scroll",handleScroll)
-})
+// const handleScroll = () =>{
+//     isScrolled.value = window.scrollY > 50;
+// }
+
+// onMounted(()=>{
+//     window.addEventListener("scroll", handleScroll)
+// })
+// onUnmounted(()=>{
+//     window.addEventListener("scroll",handleScroll)
+// })
 </script>
 <template>
     <header class="w-full px-4 py-4 bg-gray-200 md:bg-inherit border-b shadow-sm border-gray-500/20 dark:border-gray-500/50 md:rounded-lg z-99 max-sm:px-3 dark:bg-black md:border-gray-300">
         <div class="flex flex-row justify-between w-full lg:container lg:mx-auto">
         <img src="../assets/images/murigu.png" class="w-1/3 h-auto lg:w-1/4" alt="">
-        <button @click="toggleDark" class="text-xl focus:outline-none">
+        <button @click="switchTheme" class="text-xl focus:outline-none">
             <span v-if="isDark">
                 
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 -960 960 960" fill="#fefefe">

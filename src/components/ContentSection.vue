@@ -7,7 +7,7 @@ const transitionName = ref("slide-left");
 const showExitModal = ref(false);
 
 // route order
-const routeOrder = ["/", "/about", "/project"];
+const routeOrder = ["/", "/about", "/projects"];
 
 let previousIndex = routeOrder.indexOf(route.path);
 let lastNavigationTime = Date.now();

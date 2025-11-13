@@ -21,7 +21,7 @@ const items = [
             <span class="font-semibold">Tools and Services</span>
         </div>
     <div class="w-full py-3 shadow-sm bg-inherit dark:bg-[#323435]">
-        <Vue3Marquee :speed="60" :direction="left" :gradient="false" pause-on-hover="true" class="flex flex-col space-y-5">
+        <Vue3Marquee :speed="60" direction="left" :gradient="false" :pause-on-hover="true" class="flex flex-col space-y-5">
             <div v-for="(item, i) in items"
                 :key="i" 
                 class="flex flex-col items-center justify-center flex-shrink-0 w-40 space-y-3"
