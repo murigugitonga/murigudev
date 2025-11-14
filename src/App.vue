@@ -10,7 +10,7 @@ import SelfSection from './components/selfSection.vue';
       <headerComponent/>
       <div class="relative flex flex-col items-start w-full space-y-8 md:flex-row md:justify-center">
         <SelfSection/>
-        <div class="relative block w-full px-3 overflow-hidden rounded-xl">
+        <div class="block -pt-7 w-full px-3 overflow-hidden rounded-xl">
             <ContentSection/>
         </div>
       </div>

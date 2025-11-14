@@ -7,7 +7,7 @@ import SectHeader from '../SectHeader.vue';
     <div class="flex flex-col space-y-5">
         <!--Heading here-->
         <SectHeader message="Miscellaneous"/>
-        <div class="grid grid-cols-1 gap-8 justify-items-start md:justify-items-center text-gray-100 text-lg md:grid-cols-3 bg-[#141e3b] mx-2 rounded-xl p-3">
+        <div class="grid grid-cols-1 place-items-start gap-8 justify-items-start text-gray-100 text-lg bg-[#141e3b] mx-2 rounded-xl p-3">
             <ul class="flex flex-col leading-relaxed space-y-3 text-[15px] md:text-[18px]">
                 <li>&#10004; UI/UX design systems( Material UI)</li>
                 <li>&#10004; Responsive web design</li>
@@ -24,8 +24,8 @@ import SectHeader from '../SectHeader.vue';
             </ul>
             <!--Contains divider border for smaller screens-->
             <div class="flex items-center w-full">
-                <div class="hidden h-full border border-b-2 border-gray-100 md:block"></div>
-                <div class="w-full mx-10 border border-b border-gray-300 md:hidden"></div>
+                <!-- <div class="h-full border border-b-2 border-gray-100 md:block"></div> -->
+                <div class="w-full mx-10 border border-b border-gray-300"></div>
             </div>
             <ul class="flex flex-col leading-relaxed space-y-2 text-[15px] md:text-[18px]">
                 <li>&#10004; Data Entry with Excel</li>

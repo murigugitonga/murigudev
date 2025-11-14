@@ -65,7 +65,7 @@ function confirmExit() {
   // fallback: if still open, redirect to external site
   setTimeout(() => {
     if (!document.hidden) {
-      window.location.href = "https://www.google.com"; //> change external redirect to chrome homepage
+      window.location.href = "https://www.google.com"; //> change external redirect to google homepage
     }
   }, 300);
 }
@@ -89,15 +89,15 @@ const activeLink =
   "text-blue-600 dark:text-blue-400 " +
   "after:content-[''] after:absolute after:left-0 after:bottom-[-1px] after:w-full after:h-[2px] " +
   "after:bg-blue-600 dark:after:bg-blue-400 after:opacity-100 after:rounded";
-  // yeap, never used tailwind so many tailwind classes at once like this too.
+  // yeap, never used tailwind so many tailwind classes at once until this too.
 
 </script>
 
 <template>
-  <div class="relative min-h-screen dark:bg-black dark:text-white">
+  <div class="relative min-h-screen overflow-hidden dark:bg-black dark:text-white">
     <!-- Navbar -->
     <nav
-      class="sticky top-1 z-50 w-full border-b border-gray-300 dark:border-gray-700 text-[18px] flex items-center p-2 text-gray-800 dark:text-gray-300 bg-inherit space-x-14 md:justify-evenly"
+      class="sticky top-0 z-50 w-full border-b border-gray-300 dark:border-gray-700 text-[15px] md:text-[17px] flex items-center px-2 py-4 text-gray-800 dark:text-gray-300 bg-inherit dark:bg-black space-x-14 md:justify-evenly"
     >
       <RouterLink to="/" :class="[baseLink, isActive('/') ? activeLink : '']">
         Home

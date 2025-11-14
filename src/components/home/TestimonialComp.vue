@@ -6,7 +6,7 @@ import SectHeader from '../SectHeader.vue';
 <template>
     <div class="flex flex-col space-y-5">
         <SectHeader message="Testimonials"/>
-        <div class="grid grid-cols-1 px-2 gap-7 lg:grid-cols-2">
+        <div class="grid grid-cols-1 px-2 gap-7 lg:grid-cols-2 lg:gap-10">
             <!--testimonial-->
             <div class="flex flex-col items-start w-full space-y-6 leading-relaxed tracking-normal text-gray-800 dark:text-gray-300">
                 <p class="text-[15px] md:text-[18px]">
@@ -23,19 +23,19 @@ import SectHeader from '../SectHeader.vue';
                 </div>
             </div>
             <!--testimonial 2-->
-            <div class="flex flex-col items-end space-y-6 leading-relaxed text-gray-800 dark:text-gray-300">
-                <p class="text-[15px] text-end md:text-[18px]">
+            <div class="flex flex-col items-end md:items-start space-y-6 leading-relaxed text-gray-800 dark:text-gray-300">
+                <p class="text-[15px] text-end lg:text-start md:text-[18px]">
                     Murigu Gitonga is that one guy in a team that will always see solutions
                     where none seem to exist. Combined with his intricate persistence, he is  
                     a force to reckon with.
                 </p>
                 <!--Testifier-->
-                <div class="flex items-end space-x-5">  
-                    <div class="flex flex-col items-end">
+                <div class="flex items-end space-x-5 lg:items-start">  
+                    <div class="flex flex-col items-end lg:items-start">
                         <span class="font-medium dark:text-gray-100">Opiyo Agwa</span>
                         <span>Sales Lead, AzmaSoft Kenya</span>
                     </div>
-                    <img src="/src/assets/images/MeAgentFB.jpg" class="w-12 h-12 rounded-full" alt="">     
+                    <img src="/src/assets/images/MeAgentFB.jpg" class="w-12 h-12 rounded-full lg:order-first" alt="">     
                 </div>
             </div>
             <!--testimonial 3-->
@@ -56,7 +56,7 @@ import SectHeader from '../SectHeader.vue';
                 </div>
             </div>
             <!--testimonial 4--> 
-             <div class="flex flex-col items-end space-y-6 leading-relaxed text-gray-800 dark:text-gray-300">
+             <div class="flex flex-col items-end md:items-start space-y-6 leading-relaxed text-gray-800 dark:text-gray-300">
                 <p class="text-[15px] text-end md:text-[18px]">
                     Murigu Gitonga is that one guy in a team that will always see solutions
                     where none seem to exist. Combined with his intricate persistence, he is  

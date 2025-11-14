@@ -6,7 +6,7 @@ export const useThemeStore = defineStore("theme", () => {
   const THEME_KEY = "theme"
   const isDark = ref(false)
 
-  // Helper to apply theme immediately
+  // apply theme immediately on load
   function applyTheme(dark) {
     if (dark) {
       document.documentElement.classList.add("dark")
@@ -17,7 +17,7 @@ export const useThemeStore = defineStore("theme", () => {
     }
   }
 
-  // --- Initialize theme ---
+  // Initialize theme
   const storedTheme = localStorage.getItem(THEME_KEY)
   if (storedTheme) {
     isDark.value = storedTheme === "dark"
@@ -29,7 +29,7 @@ export const useThemeStore = defineStore("theme", () => {
     applyTheme(false)
   }
 
-  // --- Watch for changes ---
+  //  Watch for changes
   watch(isDark, (val) => applyTheme(val))
 
   // Toggle function
