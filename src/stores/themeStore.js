@@ -1,41 +1,45 @@
 import { defineStore } from "pinia";
-
-import { ref, watch } from "vue";
+import { ref, watch, onMounted } from "vue";
 
 export const useThemeStore = defineStore("theme", () => {
-  const THEME_KEY = "theme"
-  const isDark = ref(false) // initial mode is light
+  const THEME_KEY = "theme";
+  const isDark = ref(false);
 
-  // apply theme immediately on load
   function applyTheme(dark) {
+    const html = document.documentElement;
+
     if (dark) {
-      document.documentElement.classList.add("dark")
-      localStorage.setItem(THEME_KEY, "dark") // store in localStorage for later inference
+      html.classList.add("dark");
+      localStorage.setItem(THEME_KEY, "dark");
     } else {
-      document.documentElement.classList.remove("dark")
-      localStorage.setItem(THEME_KEY, "light")
+      html.classList.remove("dark");
+      localStorage.setItem(THEME_KEY, "light");
     }
   }
 
-  // Initialize theme based on user preference
-  const storedTheme = localStorage.getItem(THEME_KEY)
-  if (storedTheme) {
-    isDark.value = storedTheme === "dark"
-    applyTheme(isDark.value)
-  } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    isDark.value = true
-    applyTheme(true)
-  } else {
-    applyTheme(false)
-  }
+  // Run only after DOM exists
+  onMounted(() => {
+    const storedTheme = localStorage.getItem(THEME_KEY);
 
-  //  Watch for changes
-  watch(isDark,  val => applyTheme(val))
+    if (storedTheme) {
+      isDark.value = storedTheme === "dark";
+    } else {
+      isDark.value = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    }
 
-  // toggle themes flawlessly
+    applyTheme(isDark.value);
+  });
+
+  // Watch the value and apply theme
+  watch(
+    isDark,
+    (val) => applyTheme(val),
+    { flush: "post" }
+  );
+
   function toggleTheme() {
-    isDark.value = !isDark.value
+    isDark.value = !isDark.value;
   }
 
-  return { isDark, toggleTheme }
-})
+  return { isDark, toggleTheme };
+});
