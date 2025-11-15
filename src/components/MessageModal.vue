@@ -1,6 +1,7 @@
 <script setup>
 import { watch, onUnmounted } from 'vue'
-import ContactCard from './ContactCard.vue'
+import ContactCard3 from './ContactCard3.vue'
+//import ContactCard from './ContactCard.vue'
 
 
 const props = defineProps({
@@ -63,7 +64,8 @@ const handleOverlayClick = e => {
           <h2 class="mb-4 text-[16px] font-semibold text-start text-gray-700 dark:text-gray-200">
             Send me a message
           </h2>
-          <ContactCard/>
+          <!-- <ContactCard/> -->
+           <ContactCard3/>
         </div>
       </div>
     </div>
