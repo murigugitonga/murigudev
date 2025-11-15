@@ -8,7 +8,7 @@ const toastMessage = ref("")
 
 const contacts = [
     {name : "WhatsApp", icon: greenapp, alt:"WhatsApp", link: "https://wa.me/254792684339?text=Hi!%20I%20am%20interested%20in%20your%20services"},
-    {name : "Telegram", icon: telegram, alt:"Telegram", link: "https://wa.me/254792684339?text=Hi!%20I%20am%20interested%20in%20your%20services"},
+    {name : "Telegram", icon: telegram, alt:"Telegram", link: "https://t.me/murigu_gitonga"},
     {name : "Gmail", icon: gmail, alt:"Gmail", isGmail: true, link: "mailto:gitongacharlie01@gmail.com?subject=Services%20Inquiry&body=Hello%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20services."},
 ]
 function showToast(message){

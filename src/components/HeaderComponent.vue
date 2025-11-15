@@ -12,7 +12,7 @@ function switchTheme() {
 
 </script>
 <template>
-    <header class="w-full px-4 py-4 bg-gray-200 border-b shadow-sm md:bg-inherit border-gray-500/20 dark:border-gray-500/50 md:rounded-lg z-99 max-sm:px-3 dark:bg-[#323435] md:border-gray-300">
+    <header class="w-full px-4 py-4 max-sm:border-t-none bg-gray-200 border-b shadow-sm md:bg-inherit border-gray-400 dark:border-gray-600  md:rounded-lg z-99 max-sm:px-3 dark:bg-[#101011] md:border-gray-300">
         <div class="flex flex-row justify-between w-full lg:container lg:mx-auto">
         <img src="../assets/images/murigu.png" class="w-1/3 h-auto lg:w-1/4" alt="">
         <button @click="switchTheme" class="text-xl focus:outline-none">
