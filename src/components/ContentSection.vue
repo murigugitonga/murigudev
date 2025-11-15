@@ -97,7 +97,7 @@ const activeLink =
   <div class="relative min-h-screen overflow-hidden dark:bg-black dark:text-white">
     <!-- Navbar -->
     <nav
-      class="sticky top-0 z-50 w-full border-b border-gray-300 dark:border-gray-700 text-[15px] md:text-[17px] flex items-center px-2 py-4 text-gray-800 dark:text-gray-300 bg-inherit dark:bg-black space-x-14 md:justify-evenly"
+      class="sticky top-0 z-30 w-full border-b border-gray-300 dark:border-gray-700 text-[15px] md:text-[17px] flex items-center px-2 py-4 text-gray-800 dark:text-gray-300 bg-inherit dark:bg-black space-x-14 md:justify-evenly"
     >
       <RouterLink to="/" :class="[baseLink, isActive('/') ? activeLink : '']">
         Home
