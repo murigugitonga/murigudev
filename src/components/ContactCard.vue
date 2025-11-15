@@ -81,7 +81,7 @@ async function handleClick(contact){
             >
             <div class="flex items-center space-x-3">
                 <img :src="contact.icon" :alt="contact.alt" class="w-8 h-8">
-                <span class="font-medium text-[15px] dark:text-gray-100">{{ contact.name}}</span>
+                <span class="font-medium text-[13px] md:text-[15px] dark:text-gray-100">{{ contact.name}}</span>
             </div>
             <svg class="w-2 h-5 dark:invert" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.0739384 0.960613C0.0266174 0.913679 0 0.84979 0 0.78314C0 0.716491 0.0266174 0.652602 0.0739384 0.605667L0.603858 0.0757478C0.649218 0.0274165 0.712548 0 0.778831 0C0.845114 0 0.908445 0.0274165 0.953805 0.0757478L5.54811 4.67005C5.61844 4.7403 5.658 4.8356 5.65809 4.93501V5.06499C5.658 5.1644 5.61844 5.2597 5.54811 5.32995L0.953805 9.92425C0.908445 9.97258 0.845114 10 0.778831 10C0.712548 10 0.649218 9.97258 0.603858 9.92425L0.0739384 9.39433C0.0266174 9.3474 0 9.28351 0 9.21686C0 9.15021 0.0266174 9.08632 0.0739384 9.03939L4.11333 5L0.0739384 0.960613Z" fill="black"/>
@@ -89,7 +89,7 @@ async function handleClick(contact){
         </a>
         <!--Toast-->
         <transition name ="fade">
-            <div v-if="toastMessage" class="absolute bottom-0 px-4 py-2 mb-2 text-sm text-white -translate-x-1/2 bg-gray-900 rounded-lg shadow-lg left-1/2">
+            <div v-if="toastMessage" class="absolute top-0 px-4 text-[13px] md:text-[15px] py-2 mb-2 text-sm text-white -translate-x-1/2 bg-gray-900 rounded-lg shadow-lg left-1/2">
                 {{ toastMessage }}
             </div>
         </transition>

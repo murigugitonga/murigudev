@@ -9,25 +9,24 @@ import SectHeader from '../SectHeader.vue';
         <div class="grid grid-cols-1 px-2 gap-7 lg:grid-cols-2 lg:gap-10">
             <!--testimonial-->
             <div class="flex flex-col items-start w-full space-y-6 leading-relaxed tracking-normal text-gray-800 dark:text-gray-300">
-                <p class="text-[15px] md:text-[18px]">
-                    I worked with charles as he interned in our company
-                    and he showed great initiative, absolute creativeness and
-                    the ability to circumvent problems
+                <p class="text-[13px] md:text-[15px]">
+                    I was Murigu's immediate supervisor as he interned in our company
+                    He exhibited peristence,superior inter and intrapersonal skills across cross-functional teams. He inspired the different teams he worked with with his infectous positive approach to problems.
                 </p>
                 <div class="flex items-center space-x-3">
                     <img src="/src/assets/images/MeAgentFB.jpg" class="w-12 h-12 rounded-full" alt=""> 
-                    <div class="flex flex-col items-start">
+                    <div class="flex flex-col items-start text-[14px] md:[text-16px]">
                         <span class="font-medium">Mukhongo Chenane</span>
                         <p>CTO, LimeFiber</p>
                     </div>    
                 </div>
             </div>
             <!--testimonial 2-->
-            <div class="flex flex-col items-end md:items-start space-y-6 leading-relaxed text-gray-800 dark:text-gray-300">
-                <p class="text-[15px] text-end lg:text-start md:text-[18px]">
-                    Murigu Gitonga is that one guy in a team that will always see solutions
-                    where none seem to exist. Combined with his intricate persistence, he is  
-                    a force to reckon with.
+            <div class="flex flex-col items-end space-y-6 leading-relaxed text-gray-800 md:items-start dark:text-gray-300">
+                <p class="text-[13px] md:text-[15px] text-end lg:text-start">
+                   Charles has been a good friend over the years. I worked with
+                   him in university where we first started learning programming in general.
+                   He excelled at coming up with solutions where none seemed to exist.
                 </p>
                 <!--Testifier-->
                 <div class="flex items-end space-x-5 lg:items-start">  
@@ -40,35 +39,20 @@ import SectHeader from '../SectHeader.vue';
             </div>
             <!--testimonial 3-->
              <div class="flex flex-col items-start space-y-6 text-gray-800 dark:text-gray-300">
-                <p class="text-[15px] md:text-[18px]">
-                    Murigu Gitonga is that one guy in a team that will always see solutions
-                    where none seem to exist. Combined with his intricate persistence, he is  
-                    a force to reckon with.
+                <p class="text-[13px] md:text-[15px]">
+                    I was paired with charles when he entered the software development department 
+                    during his internship. What was striking about him as an intern was that he never saw 
+                    bugs as challenges, rather, he embraced them as part of his learning journey. Not once did 
+                    I see him cower when solving bugs. He is always learning.
                 </p>
                 <!--Testifier-->
                 <div class="flex space-x-2">
                     <img src="/src/assets/images/MeAgentFB.jpg" class="w-12 h-12 rounded-full" alt=""> 
-                    <div class="flex flex-col items-start">
-                        <span class="font-medium">Kahuthu Ngare</span>
-                        <span>Software Engineer, LimeFiber</span>
+                    <div class="flex flex-col items-start text-[13px] md:text-[15px]">
+                        <span class="font-semibold">Kahuthu Ngare</span>
+                        <span class="font-normal">Software Engineer, LimeFiber</span>
                     </div>
                     
-                </div>
-            </div>
-            <!--testimonial 4--> 
-             <div class="flex flex-col items-end md:items-start space-y-6 leading-relaxed text-gray-800 dark:text-gray-300">
-                <p class="text-[15px] text-end md:text-[18px]">
-                    Murigu Gitonga is that one guy in a team that will always see solutions
-                    where none seem to exist. Combined with his intricate persistence, he is  
-                    a force to reckon with.
-                </p>
-                <!--Testifier-->
-                <div class="flex items-end space-x-5">  
-                    <div class="flex flex-col items-end">
-                        <span class="font-medium dark:text-gray-100">Mira Murati</span>
-                        <span>CEO, Thinking machines lab</span>
-                    </div>
-                    <img src="/src/assets/images/MeAgentFB.jpg" class="w-12 h-12 rounded-full" alt="">     
                 </div>
             </div>
         </div>

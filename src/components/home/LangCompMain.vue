@@ -20,7 +20,7 @@ defineProps({
     class="w-full p-3 space-y-3 rounded-lg shadow-md bg-white dark:bg-[#323435] transition-all hover:shadow-lg"
   >
     <!-- Specialty / Category -->
-    <span class="font-medium text-gray-600 dark:text-gray-400">
+    <span class="font-medium text-[15px] md:text-[17px] text-gray-700 dark:text-gray-200">
       {{ specialty }}
     </span>
 
@@ -35,10 +35,10 @@ defineProps({
           :src="skill.icon"
           :alt="skill.name"
           class="object-contain w-10 h-10"
-          loading="eager"
+          loading="lazy"
         />
         <span
-          class="text-[15px] md:text-[16px] text-gray-700 dark:text-gray-300"
+          class="text-[13px] md:text-[15px] text-gray-700 dark:text-gray-300"
         >
           {{ skill.name }}
         </span>

@@ -60,7 +60,7 @@ const handleOverlayClick = e => {
         </button>
         <!-- Modal content -->
         <div class="flex flex-col text-gray-900">
-          <h2 class="mb-4 text-[16px] font-semibold text-start dark:text-gray-50">
+          <h2 class="mb-4 text-[16px] font-semibold text-start text-gray-700 dark:text-gray-200">
             Send me a message
           </h2>
           <ContactCard/>

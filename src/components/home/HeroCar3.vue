@@ -10,28 +10,28 @@ import img5 from "@/assets/images/AsyncCodeUpdated.png";
 const slides = ref([
     {
     image: img1,
-    title: 'User-empathetic visuals',
-    description: 'Modern interfaces that are user-driven',
+    title: 'User-Empathetic Interfaces',
+    description: 'Interfaces that emotionally connect with the end-users',
   },
   {
     image: img5,
-    title: 'Language-agnostic development',
-    description: 'Ability to shift between tools, libraries and frameworks with ease',
+    title: 'Component-Based Approach',
+    description: 'Separated concerns for a comprehensive logical pictures',
   },
   {
     image: img3,
-    title: 'Scalable architectures',
-    description: 'Designing architectures that gracefully scale with complexity',
+    title: 'Scalable Architectures',
+    description: 'Architectures that gracefully scale with complexity',
   },
   {
     image: img2,
-    title: 'AI-driven workflows',
+    title: 'AI-Augmented Workflows',
     description: 'Embracing AI as a force multiplier and a pair developer.',
   },
   {
     image: img4,
-    title: 'Serveless architectures',
-    description: 'headless and serveless architectures as the modern currency of development',
+    title: 'Serveless Architectures',
+    description: 'Headless and serveless architectures as the modern currency of development',
   },
 ])
 

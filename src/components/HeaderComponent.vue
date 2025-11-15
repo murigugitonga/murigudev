@@ -1,7 +1,7 @@
 <script setup>
-//import { useDark } from './composables/useDark';
-import { ref, onMounted , onUnmounted } from "vue";
-//const {isDark, toggleDark } = useDark()
+import { ref } from "vue";
+
+const isDark = ref(false)
 
 import {useThemeStore} from "@/stores/themeStore"
 const theme = useThemeStore()
@@ -9,26 +9,14 @@ const theme = useThemeStore()
 function switchTheme() {
     theme.toggleTheme()
 }
-//const isScrolled = ref(false)
 
-// const handleScroll = () =>{
-//     isScrolled.value = window.scrollY > 50;
-// }
-
-// onMounted(()=>{
-//     window.addEventListener("scroll", handleScroll)
-// })
-// onUnmounted(()=>{
-//     window.addEventListener("scroll",handleScroll)
-// })
 </script>
 <template>
-    <header class="w-full px-4 py-4 bg-gray-200 md:bg-inherit border-b shadow-sm border-gray-500/20 dark:border-gray-500/50 md:rounded-lg z-99 max-sm:px-3 dark:bg-black md:border-gray-300">
+    <header class="w-full px-4 py-4 bg-gray-200 border-b shadow-sm md:bg-inherit border-gray-500/20 dark:border-gray-500/50 md:rounded-lg z-99 max-sm:px-3 dark:bg-[#323435] md:border-gray-300">
         <div class="flex flex-row justify-between w-full lg:container lg:mx-auto">
         <img src="../assets/images/murigu.png" class="w-1/3 h-auto lg:w-1/4" alt="">
         <button @click="switchTheme" class="text-xl focus:outline-none">
             <span v-if="isDark">
-                
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 -960 960 960" fill="#fefefe">
                     <path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/>
                 </svg>

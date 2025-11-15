@@ -17,6 +17,8 @@ import SectHeader from '../SectHeader.vue';
                 <li>&#10004; Headless & serveless CMS</li>
                 <li>&#10004; Agile & scrum Methodologies</li>
                 <li>&#10004; CI/CD Pipeline</li>
+                <li>&#10004; Unit testing w/Jest (Frontend)</li>
+                <li>&#10004; Containerization w/ docker(Learning)</li>
                 <li class="text-opacity-30">&#10004; Payments gateway integration (Learning)</li>
                 <li class="text-opacity-50">&#10004; AI integration with Node & Python (Learning)</li>
                 <li class="text-opacity-50">&#10004; Agent-based modelling with mesa (Learning)</li>
