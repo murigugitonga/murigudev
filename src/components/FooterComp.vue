@@ -13,7 +13,7 @@ import discord from '@/assets/icons/icons8-discord.svg'
 <template>
     <footer class="block w-full px-2">
         <div class="flex flex-col space-y-3">
-            <div class="flex items-center text-[18px] justify-between w-full pb-1 border-b border-gray-400 dark:border-gray-600 dark:text-gray-200">
+            <div class="flex items-center text-[18px] justify-between w-full pb-1 border-b border-gray-400 dark:border-gray-600 dark:text-gray-200 md:hidden">
                 <span class="text-[13px] md:[text-15px]">Blog</span>
                 <a href="https://medium.com/@gitongacharlie01" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="hidden w-8 dark:block" fill="#ffff" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -24,7 +24,7 @@ import discord from '@/assets/icons/icons8-discord.svg'
                     </svg>
                 </a>
             </div>
-            <div class="flex justify-between w-full dark:text-gray-200">
+            <div class="flex justify-between w-full dark:text-gray-200 md:hidden">
                 <!--Socials-->
                 <nav class="flex flex-col space-y-6">
                     <SocialLink 
@@ -52,7 +52,7 @@ import discord from '@/assets/icons/icons8-discord.svg'
                     <img src="@/assets/images/murigu.png" class="h-12 aspect-auto" alt="">
                 </div> 
                 <nav class="flex flex-col space-y-6 dark:text-gray-200">
-                     <SocialLink 
+                    <SocialLink 
                         href="https://www.linkedin.com/in/charles-gitonga-915bab360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                         :icon="linkedIn"
                         label="linkedIn"
@@ -74,10 +74,10 @@ import discord from '@/assets/icons/icons8-discord.svg'
                     />
                 </nav>
             </div>
-            <div class="flex justify-center mx-12 dark:bg-[#101011] bg-gray-200 border-t border-gray-400 dark:border-gray-600 border-x rounded-t-xl dark:text-gray-100">
+            <div class="flex justify-center mx-12 dark:bg-[#101011] bg-gray-200 border-t border-gray-400 dark:border-gray-600 border-x md:border-none md:bg-inherit rounded-t-xl dark:text-gray-100">
                 <div class="flex flex-col items-center py-2 space-y-1 text-xs text-gray-600 dark:text-gray-300">
                     <p>Powered by Vue3, Tailwind and vite</p>
-                    <p>Murigu Gitonga &copy; 2025</p>
+                    <p>Murigu Gitonga &copy; {{ new Date().getFullYear() }}</p>
                     <p>All Rights Reserved</p>
                 </div>
             </div>

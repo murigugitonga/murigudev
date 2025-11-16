@@ -1,6 +1,7 @@
 <script setup>
 import SectHeader from '../SectHeader.vue';
-
+import Opiyo from '@/assets/images/opiyo.png';
+import ken from '@/assets/images/ken.png'
 
 </script>
 <template>
@@ -15,7 +16,7 @@ import SectHeader from '../SectHeader.vue';
                 </p>
                 <div class="flex items-center space-x-3">
                     <img src="/src/assets/images/MeAgentFB.jpg" class="w-12 h-12 rounded-full" alt=""> 
-                    <div class="flex flex-col items-start text-[14px] md:[text-16px]">
+                    <div class="flex flex-col items-start text-[13px] md:[text-15px]">
                         <span class="font-medium">Mukhongo Chenane</span>
                         <p>CTO, LimeFiber</p>
                     </div>    
@@ -30,11 +31,11 @@ import SectHeader from '../SectHeader.vue';
                 </p>
                 <!--Testifier-->
                 <div class="flex items-end space-x-5 lg:items-start">  
-                    <div class="flex flex-col items-end lg:items-start">
+                    <div class="flex flex-col items-end lg:items-start text-[13px] md:text-[15px]">
                         <span class="font-medium dark:text-gray-100">Opiyo Agwa</span>
                         <span>Sales Lead, AzmaSoft Kenya</span>
                     </div>
-                    <img src="/src/assets/images/MeAgentFB.jpg" class="w-12 h-12 rounded-full lg:order-first" alt="">     
+                    <img src="/src/assets/images/opiyo.png" class="w-12 h-12 rounded-full lg:order-first" alt="">     
                 </div>
             </div>
             <!--testimonial 3-->
@@ -47,7 +48,7 @@ import SectHeader from '../SectHeader.vue';
                 </p>
                 <!--Testifier-->
                 <div class="flex space-x-2">
-                    <img src="/src/assets/images/MeAgentFB.jpg" class="w-12 h-12 rounded-full" alt=""> 
+                    <img src="/src/assets/images/Ken.png" class="w-12 h-12 rounded-full" alt=""> 
                     <div class="flex flex-col items-start text-[13px] md:text-[15px]">
                         <span class="font-semibold">Kahuthu Ngare</span>
                         <span class="font-normal">Software Engineer, LimeFiber</span>

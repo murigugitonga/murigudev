@@ -56,25 +56,21 @@ async function handleClick(contact) {
         const userAgent = navigator.userAgent
         const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile/i.test(userAgent)
 
-        // ======================
-        // QR CODE HANDLING FOR DESKTOP
-        // ======================
+        // QR code for desktop
         if (!isMobile && contact.qr) {
-            generateQR(contact.link, `Scan to open ${contact.name}`)
+            generateQR(contact.link, `Scan to open ${contact.name} on your phone`)
             return
         }
 
-        // ======================
-        // NON-GMAIL HANDLING (Normal click)
-        // ======================
+    
+        // WhatsApp & Telegram link handling
         if (!contact.isGmail) {
             window.open(contact.link, "_blank")
             return
         }
 
-        // ======================
-        // GMAIL LOGIC
-        // ======================
+        
+        // gmail handling
         const email = "gitongacharlie01@gmail.com"
         const subject = "Services Enquiry"
         const body = "Hi! I'd like to know more about your services."
@@ -101,7 +97,7 @@ async function handleClick(contact) {
 <template>
     <div class="flex flex-col space-y-5 font-medium pe-5">
 
-        <!-- CONTACT LIST -->
+        <!-- Contact -->
         <a 
             v-for="contact in contacts"
             :key="contact.name"
@@ -111,7 +107,7 @@ async function handleClick(contact) {
         >
             <div class="flex items-center space-x-3">
                 <img :src="contact.icon" :alt="contact.alt" class="w-8 h-8" />
-                <span class="font-medium text-[13px] md:text-[15px] dark:text-gray-100">
+                <span class="font-normal text-[13px] md:text-[15px] dark:text-gray-100">
                     {{ contact.name }}
                 </span>
             </div>
@@ -134,7 +130,7 @@ async function handleClick(contact) {
             </div>
         </transition>
 
-        <!-- QR MODAL -->
+        <!-- qr modal for desktop-->
         <div 
             v-if="showQR"
             class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"

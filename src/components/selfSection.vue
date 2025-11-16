@@ -2,13 +2,15 @@
 import { ref } from 'vue';
 //import profileImg from '@/assets/images/trialProfileImage.png'
 import MessageModal from './MessageModal.vue';
+import DesktopCards from './DesktopCards.vue';
+
 const isModalOpen = ref(false);
 
 </script>
 <template>
     <div class="flex flex-col items-center justify-center w-full px-2 space-y-5 md:items-start md:space-y-5 dark: bg-inherit md:w-1/3">
         <!-- <profileImg/> -->
-        <img src="../assets/images/trialProfileImage.png"class="w-full rounded-lg drop-shadow" alt="">
+        <img src="../assets/images/trialProfileImage.png"class="rounded-lg drop-shadow" alt="">
         <div class="flex items-center justify-between w-full md:items-start md:w-full md:space-y-5 lg:space-y-0 lg:items-center md:flex-col lg:flex-row">
             <div class="flex flex-col w-1/2 md:w-full lg:w-1/2 items-start space-y-0.5 md:items-start">
                 <p class="space-x-2 text-[15px] uppercase md:text-sm dark:text-gray-100"><span class="font-semibold">Murigu</span><span class="font-normal">Gitonga</span></p>
@@ -27,7 +29,8 @@ const isModalOpen = ref(false);
                 <a href="#"><img src="../assets/images/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" class="w-12 h-12" alt=""></a>
                 <a href="#"><img src="../assets/icons/Twitter-icon.svg" class="w-12 h-12" alt=""></a>
             </nav>  
-        </div>
+        </div> 
+    <DesktopCards/>
     </div>
-    <!-- <CustomDivider/> -->
+
 </template>
