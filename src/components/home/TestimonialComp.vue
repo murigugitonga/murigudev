@@ -1,7 +1,7 @@
 <script setup>
 import SectHeader from '../SectHeader.vue';
-import Opiyo from '@/assets/images/opiyo.png';
-import ken from '@/assets/images/ken.png'
+//import Opiyo from '@/assets/images/opiyo.png';
+//import ken from '@/assets/images/ken.png'
 
 </script>
 <template>
