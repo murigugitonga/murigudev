@@ -1,10 +1,10 @@
 <script setup>
 import { ref, onMounted, onUnmounted, nextTick } from "vue";
 
-import img1 from "@/assets/images/modifiedBSCard.png";
-import img2 from "@/assets/images/muriguprograms.png";
+import img1 from "@/assets/images/UIIXTransp.webp";
+import img2 from "@/assets/images/ArchTransparent.webp";
 import img3 from "@/assets/images/servers.jpeg";
-import img4 from "@/assets/images/compProgrammer.png";
+import img4 from "@/assets/images/ArchBasicFilled.webp";
 import img5 from "@/assets/images/AsyncCodeUpdated.png";
 
 const originalSlides = [

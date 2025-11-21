@@ -38,8 +38,8 @@ import SectHeader from '../SectHeader.vue';
                     <img src="/src/assets/images/opiyo.png" class="w-12 h-12 rounded-full lg:order-first" alt="">     
                 </div>
             </div>
-            <!--testimonial 3-->
-             <div class="flex flex-col items-start space-y-6 text-gray-800 dark:text-gray-300">
+            <!--Testimonial 3-->
+            <div class="flex flex-col items-start space-y-6 text-gray-800 dark:text-gray-300">
                 <p class="text-[13px] md:text-[15px]">
                     I was paired with charles when he entered the software development department 
                     during his internship. What was striking about him as an intern was that he never saw 
