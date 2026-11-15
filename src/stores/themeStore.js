@@ -33,7 +33,7 @@ export const useThemeStore = defineStore("theme", () => {
   // Watch the value and apply theme
   watch(
     isDark,
-    (val) => applyTheme(val),
+    val => applyTheme(val),
     { flush: "post" }
   );
 

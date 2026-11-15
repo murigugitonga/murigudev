@@ -28,8 +28,8 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
 <template>
   <header
     class="
-      fixed top-0 left-0 w-full px-4 py-4 rounded-b-lg mb-20 md:py-0 z-50
-      md:rounded-lg border-b bg-gray-200 dark:bg-[#101011]
+      fixed -top-5 left-0 w-full px-4 py-4 rounded-b-lg mb-20 md:py-0 z-50
+      md:rounded-lg border-b bg-inherit dark:bg-[#101011]
       shadow-sm dark:border-gray-700 border-gray-300
       transition-all duration-150 pointer-events-auto
     "
@@ -38,13 +38,13 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
     <div class="flex flex-row items-center justify-between w-full lg:max-w-6xl lg:container lg:mx-auto">
       <img
         src="@/assets/images/murigu.png"
-        class="w-32 md:w-40 lg:w-72"
+        class="w-28 md:w-32 lg:w-40"
         alt="Murigu label"
       />
 
       <button
         @click="switchTheme"
-        class="relative flex items-center justify-center w-10 h-10 text-xl transition-all duration-300 border focus:outline-none hover:scale-110 active:scale-95"
+        class="relative flex items-center justify-center w-10 h-10 text-xl transition-all duration-300 focus:outline-none hover:scale-110 active:scale-95"
         :class="{ 'animate-spin': animating }"
       >
         <!-- Icon dark-->

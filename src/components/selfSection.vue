@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 //import profileImg from '@/assets/images/trialProfileImage.png'
+import MuriguMain from '@/assets/images/MuriguMain.png'
 import MessageModal from './MessageModal.vue';
 import DesktopCards from './DesktopCards.vue';
 
